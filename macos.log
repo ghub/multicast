@@ -1,0 +1,255 @@
+Test port is 23999...
+Primary address: 192.168.1.31...
+MODE       PROTO  REUSE      ADDRESS1         ADDRESS2         -> RESULT
+(none)     TCP    (none)     0.0.0.0          0.0.0.0          ->  Error! (Address already in use)
+(none)     TCP    (none)     0.0.0.0          127.0.0.1        ->  Error! (Address already in use)
+(none)     TCP    (none)     0.0.0.0          192.168.1.31     ->  Error! (Address already in use)
+(none)     TCP    (none)     127.0.0.1        0.0.0.0          ->  Error! (Address already in use)
+(none)     TCP    (none)     127.0.0.1        127.0.0.1        ->  Error! (Address already in use)
+(none)     TCP    (none)     127.0.0.1        192.168.1.31     ->  OK
+(none)     TCP    (none)     192.168.1.31     0.0.0.0          ->  Error! (Address already in use)
+(none)     TCP    (none)     192.168.1.31     127.0.0.1        ->  OK
+(none)     TCP    (none)     192.168.1.31     192.168.1.31     ->  Error! (Address already in use)
+(none)     TCP    Addr(1)    0.0.0.0          0.0.0.0          ->  Error! (Address already in use)
+(none)     TCP    Addr(1)    0.0.0.0          127.0.0.1        ->  Error! (Address already in use)
+(none)     TCP    Addr(1)    0.0.0.0          192.168.1.31     ->  Error! (Address already in use)
+(none)     TCP    Addr(1)    127.0.0.1        0.0.0.0          ->  Error! (Address already in use)
+(none)     TCP    Addr(1)    127.0.0.1        127.0.0.1        ->  Error! (Address already in use)
+(none)     TCP    Addr(1)    127.0.0.1        192.168.1.31     ->  OK
+(none)     TCP    Addr(1)    192.168.1.31     0.0.0.0          ->  Error! (Address already in use)
+(none)     TCP    Addr(1)    192.168.1.31     127.0.0.1        ->  OK
+(none)     TCP    Addr(1)    192.168.1.31     192.168.1.31     ->  Error! (Address already in use)
+(none)     TCP    Addr(2)    0.0.0.0          0.0.0.0          ->  Error! (Address already in use)
+(none)     TCP    Addr(2)    0.0.0.0          127.0.0.1        ->  OK
+(none)     TCP    Addr(2)    0.0.0.0          192.168.1.31     ->  OK
+(none)     TCP    Addr(2)    127.0.0.1        0.0.0.0          ->  OK
+(none)     TCP    Addr(2)    127.0.0.1        127.0.0.1        ->  Error! (Address already in use)
+(none)     TCP    Addr(2)    127.0.0.1        192.168.1.31     ->  OK
+(none)     TCP    Addr(2)    192.168.1.31     0.0.0.0          ->  OK
+(none)     TCP    Addr(2)    192.168.1.31     127.0.0.1        ->  OK
+(none)     TCP    Addr(2)    192.168.1.31     192.168.1.31     ->  Error! (Address already in use)
+(none)     TCP    Addr(1&2)  0.0.0.0          0.0.0.0          ->  Error! (Address already in use)
+(none)     TCP    Addr(1&2)  0.0.0.0          127.0.0.1        ->  OK
+(none)     TCP    Addr(1&2)  0.0.0.0          192.168.1.31     ->  OK
+(none)     TCP    Addr(1&2)  127.0.0.1        0.0.0.0          ->  OK
+(none)     TCP    Addr(1&2)  127.0.0.1        127.0.0.1        ->  Error! (Address already in use)
+(none)     TCP    Addr(1&2)  127.0.0.1        192.168.1.31     ->  OK
+(none)     TCP    Addr(1&2)  192.168.1.31     0.0.0.0          ->  OK
+(none)     TCP    Addr(1&2)  192.168.1.31     127.0.0.1        ->  OK
+(none)     TCP    Addr(1&2)  192.168.1.31     192.168.1.31     ->  Error! (Address already in use)
+(none)     TCP    Port(1)    0.0.0.0          0.0.0.0          ->  Error! (Address already in use)
+(none)     TCP    Port(1)    0.0.0.0          127.0.0.1        ->  Error! (Address already in use)
+(none)     TCP    Port(1)    0.0.0.0          192.168.1.31     ->  Error! (Address already in use)
+(none)     TCP    Port(1)    127.0.0.1        0.0.0.0          ->  Error! (Address already in use)
+(none)     TCP    Port(1)    127.0.0.1        127.0.0.1        ->  Error! (Address already in use)
+(none)     TCP    Port(1)    127.0.0.1        192.168.1.31     ->  OK
+(none)     TCP    Port(1)    192.168.1.31     0.0.0.0          ->  Error! (Address already in use)
+(none)     TCP    Port(1)    192.168.1.31     127.0.0.1        ->  OK
+(none)     TCP    Port(1)    192.168.1.31     192.168.1.31     ->  Error! (Address already in use)
+(none)     TCP    Port(2)    0.0.0.0          0.0.0.0          ->  Error! (Address already in use)
+(none)     TCP    Port(2)    0.0.0.0          127.0.0.1        ->  OK
+(none)     TCP    Port(2)    0.0.0.0          192.168.1.31     ->  OK
+(none)     TCP    Port(2)    127.0.0.1        0.0.0.0          ->  OK
+(none)     TCP    Port(2)    127.0.0.1        127.0.0.1        ->  Error! (Address already in use)
+(none)     TCP    Port(2)    127.0.0.1        192.168.1.31     ->  OK
+(none)     TCP    Port(2)    192.168.1.31     0.0.0.0          ->  OK
+(none)     TCP    Port(2)    192.168.1.31     127.0.0.1        ->  OK
+(none)     TCP    Port(2)    192.168.1.31     192.168.1.31     ->  Error! (Address already in use)
+(none)     TCP    Port(1&2)  0.0.0.0          0.0.0.0          ->  OK
+(none)     TCP    Port(1&2)  0.0.0.0          127.0.0.1        ->  OK
+(none)     TCP    Port(1&2)  0.0.0.0          192.168.1.31     ->  OK
+(none)     TCP    Port(1&2)  127.0.0.1        0.0.0.0          ->  OK
+(none)     TCP    Port(1&2)  127.0.0.1        127.0.0.1        ->  OK
+(none)     TCP    Port(1&2)  127.0.0.1        192.168.1.31     ->  OK
+(none)     TCP    Port(1&2)  192.168.1.31     0.0.0.0          ->  OK
+(none)     TCP    Port(1&2)  192.168.1.31     127.0.0.1        ->  OK
+(none)     TCP    Port(1&2)  192.168.1.31     192.168.1.31     ->  OK
+(none)     UDP    (none)     0.0.0.0          0.0.0.0          ->  Error! (Address already in use)
+(none)     UDP    (none)     0.0.0.0          127.0.0.1        ->  Error! (Address already in use)
+(none)     UDP    (none)     0.0.0.0          192.168.1.31     ->  Error! (Address already in use)
+(none)     UDP    (none)     127.0.0.1        0.0.0.0          ->  Error! (Address already in use)
+(none)     UDP    (none)     127.0.0.1        127.0.0.1        ->  Error! (Address already in use)
+(none)     UDP    (none)     127.0.0.1        192.168.1.31     ->  OK
+(none)     UDP    (none)     192.168.1.31     0.0.0.0          ->  Error! (Address already in use)
+(none)     UDP    (none)     192.168.1.31     127.0.0.1        ->  OK
+(none)     UDP    (none)     192.168.1.31     192.168.1.31     ->  Error! (Address already in use)
+(none)     UDP    Addr(1)    0.0.0.0          0.0.0.0          ->  Error! (Address already in use)
+(none)     UDP    Addr(1)    0.0.0.0          127.0.0.1        ->  Error! (Address already in use)
+(none)     UDP    Addr(1)    0.0.0.0          192.168.1.31     ->  Error! (Address already in use)
+(none)     UDP    Addr(1)    127.0.0.1        0.0.0.0          ->  Error! (Address already in use)
+(none)     UDP    Addr(1)    127.0.0.1        127.0.0.1        ->  Error! (Address already in use)
+(none)     UDP    Addr(1)    127.0.0.1        192.168.1.31     ->  OK
+(none)     UDP    Addr(1)    192.168.1.31     0.0.0.0          ->  Error! (Address already in use)
+(none)     UDP    Addr(1)    192.168.1.31     127.0.0.1        ->  OK
+(none)     UDP    Addr(1)    192.168.1.31     192.168.1.31     ->  Error! (Address already in use)
+(none)     UDP    Addr(2)    0.0.0.0          0.0.0.0          ->  Error! (Address already in use)
+(none)     UDP    Addr(2)    0.0.0.0          127.0.0.1        ->  OK
+(none)     UDP    Addr(2)    0.0.0.0          192.168.1.31     ->  OK
+(none)     UDP    Addr(2)    127.0.0.1        0.0.0.0          ->  OK
+(none)     UDP    Addr(2)    127.0.0.1        127.0.0.1        ->  Error! (Address already in use)
+(none)     UDP    Addr(2)    127.0.0.1        192.168.1.31     ->  OK
+(none)     UDP    Addr(2)    192.168.1.31     0.0.0.0          ->  OK
+(none)     UDP    Addr(2)    192.168.1.31     127.0.0.1        ->  OK
+(none)     UDP    Addr(2)    192.168.1.31     192.168.1.31     ->  Error! (Address already in use)
+(none)     UDP    Addr(1&2)  0.0.0.0          0.0.0.0          ->  Error! (Address already in use)
+(none)     UDP    Addr(1&2)  0.0.0.0          127.0.0.1        ->  OK
+(none)     UDP    Addr(1&2)  0.0.0.0          192.168.1.31     ->  OK
+(none)     UDP    Addr(1&2)  127.0.0.1        0.0.0.0          ->  OK
+(none)     UDP    Addr(1&2)  127.0.0.1        127.0.0.1        ->  Error! (Address already in use)
+(none)     UDP    Addr(1&2)  127.0.0.1        192.168.1.31     ->  OK
+(none)     UDP    Addr(1&2)  192.168.1.31     0.0.0.0          ->  OK
+(none)     UDP    Addr(1&2)  192.168.1.31     127.0.0.1        ->  OK
+(none)     UDP    Addr(1&2)  192.168.1.31     192.168.1.31     ->  Error! (Address already in use)
+(none)     UDP    Port(1)    0.0.0.0          0.0.0.0          ->  Error! (Address already in use)
+(none)     UDP    Port(1)    0.0.0.0          127.0.0.1        ->  Error! (Address already in use)
+(none)     UDP    Port(1)    0.0.0.0          192.168.1.31     ->  Error! (Address already in use)
+(none)     UDP    Port(1)    127.0.0.1        0.0.0.0          ->  Error! (Address already in use)
+(none)     UDP    Port(1)    127.0.0.1        127.0.0.1        ->  Error! (Address already in use)
+(none)     UDP    Port(1)    127.0.0.1        192.168.1.31     ->  OK
+(none)     UDP    Port(1)    192.168.1.31     0.0.0.0          ->  Error! (Address already in use)
+(none)     UDP    Port(1)    192.168.1.31     127.0.0.1        ->  OK
+(none)     UDP    Port(1)    192.168.1.31     192.168.1.31     ->  Error! (Address already in use)
+(none)     UDP    Port(2)    0.0.0.0          0.0.0.0          ->  Error! (Address already in use)
+(none)     UDP    Port(2)    0.0.0.0          127.0.0.1        ->  OK
+(none)     UDP    Port(2)    0.0.0.0          192.168.1.31     ->  OK
+(none)     UDP    Port(2)    127.0.0.1        0.0.0.0          ->  OK
+(none)     UDP    Port(2)    127.0.0.1        127.0.0.1        ->  Error! (Address already in use)
+(none)     UDP    Port(2)    127.0.0.1        192.168.1.31     ->  OK
+(none)     UDP    Port(2)    192.168.1.31     0.0.0.0          ->  OK
+(none)     UDP    Port(2)    192.168.1.31     127.0.0.1        ->  OK
+(none)     UDP    Port(2)    192.168.1.31     192.168.1.31     ->  Error! (Address already in use)
+(none)     UDP    Port(1&2)  0.0.0.0          0.0.0.0          ->  OK
+(none)     UDP    Port(1&2)  0.0.0.0          127.0.0.1        ->  OK
+(none)     UDP    Port(1&2)  0.0.0.0          192.168.1.31     ->  OK
+(none)     UDP    Port(1&2)  127.0.0.1        0.0.0.0          ->  OK
+(none)     UDP    Port(1&2)  127.0.0.1        127.0.0.1        ->  OK
+(none)     UDP    Port(1&2)  127.0.0.1        192.168.1.31     ->  OK
+(none)     UDP    Port(1&2)  192.168.1.31     0.0.0.0          ->  OK
+(none)     UDP    Port(1&2)  192.168.1.31     127.0.0.1        ->  OK
+(none)     UDP    Port(1&2)  192.168.1.31     192.168.1.31     ->  OK
+Listen     TCP    (none)     0.0.0.0          0.0.0.0          ->  Error! (Address already in use)
+Listen     TCP    (none)     0.0.0.0          127.0.0.1        ->  Error! (Address already in use)
+Listen     TCP    (none)     0.0.0.0          192.168.1.31     ->  Error! (Address already in use)
+Listen     TCP    (none)     127.0.0.1        0.0.0.0          ->  Error! (Address already in use)
+Listen     TCP    (none)     127.0.0.1        127.0.0.1        ->  Error! (Address already in use)
+Listen     TCP    (none)     127.0.0.1        192.168.1.31     ->  OK
+Listen     TCP    (none)     192.168.1.31     0.0.0.0          ->  Error! (Address already in use)
+Listen     TCP    (none)     192.168.1.31     127.0.0.1        ->  OK
+Listen     TCP    (none)     192.168.1.31     192.168.1.31     ->  Error! (Address already in use)
+Listen     TCP    Addr(1)    0.0.0.0          0.0.0.0          ->  Error! (Address already in use)
+Listen     TCP    Addr(1)    0.0.0.0          127.0.0.1        ->  Error! (Address already in use)
+Listen     TCP    Addr(1)    0.0.0.0          192.168.1.31     ->  Error! (Address already in use)
+Listen     TCP    Addr(1)    127.0.0.1        0.0.0.0          ->  Error! (Address already in use)
+Listen     TCP    Addr(1)    127.0.0.1        127.0.0.1        ->  Error! (Address already in use)
+Listen     TCP    Addr(1)    127.0.0.1        192.168.1.31     ->  OK
+Listen     TCP    Addr(1)    192.168.1.31     0.0.0.0          ->  Error! (Address already in use)
+Listen     TCP    Addr(1)    192.168.1.31     127.0.0.1        ->  OK
+Listen     TCP    Addr(1)    192.168.1.31     192.168.1.31     ->  Error! (Address already in use)
+Listen     TCP    Addr(2)    0.0.0.0          0.0.0.0          ->  Error! (Address already in use)
+Listen     TCP    Addr(2)    0.0.0.0          127.0.0.1        ->  OK
+Listen     TCP    Addr(2)    0.0.0.0          192.168.1.31     ->  OK
+Listen     TCP    Addr(2)    127.0.0.1        0.0.0.0          ->  OK
+Listen     TCP    Addr(2)    127.0.0.1        127.0.0.1        ->  Error! (Address already in use)
+Listen     TCP    Addr(2)    127.0.0.1        192.168.1.31     ->  OK
+Listen     TCP    Addr(2)    192.168.1.31     0.0.0.0          ->  OK
+Listen     TCP    Addr(2)    192.168.1.31     127.0.0.1        ->  OK
+Listen     TCP    Addr(2)    192.168.1.31     192.168.1.31     ->  Error! (Address already in use)
+Listen     TCP    Addr(1&2)  0.0.0.0          0.0.0.0          ->  Error! (Address already in use)
+Listen     TCP    Addr(1&2)  0.0.0.0          127.0.0.1        ->  OK
+Listen     TCP    Addr(1&2)  0.0.0.0          192.168.1.31     ->  OK
+Listen     TCP    Addr(1&2)  127.0.0.1        0.0.0.0          ->  OK
+Listen     TCP    Addr(1&2)  127.0.0.1        127.0.0.1        ->  Error! (Address already in use)
+Listen     TCP    Addr(1&2)  127.0.0.1        192.168.1.31     ->  OK
+Listen     TCP    Addr(1&2)  192.168.1.31     0.0.0.0          ->  OK
+Listen     TCP    Addr(1&2)  192.168.1.31     127.0.0.1        ->  OK
+Listen     TCP    Addr(1&2)  192.168.1.31     192.168.1.31     ->  Error! (Address already in use)
+Listen     TCP    Port(1)    0.0.0.0          0.0.0.0          ->  Error! (Address already in use)
+Listen     TCP    Port(1)    0.0.0.0          127.0.0.1        ->  Error! (Address already in use)
+Listen     TCP    Port(1)    0.0.0.0          192.168.1.31     ->  Error! (Address already in use)
+Listen     TCP    Port(1)    127.0.0.1        0.0.0.0          ->  Error! (Address already in use)
+Listen     TCP    Port(1)    127.0.0.1        127.0.0.1        ->  Error! (Address already in use)
+Listen     TCP    Port(1)    127.0.0.1        192.168.1.31     ->  OK
+Listen     TCP    Port(1)    192.168.1.31     0.0.0.0          ->  Error! (Address already in use)
+Listen     TCP    Port(1)    192.168.1.31     127.0.0.1        ->  OK
+Listen     TCP    Port(1)    192.168.1.31     192.168.1.31     ->  Error! (Address already in use)
+Listen     TCP    Port(2)    0.0.0.0          0.0.0.0          ->  Error! (Address already in use)
+Listen     TCP    Port(2)    0.0.0.0          127.0.0.1        ->  OK
+Listen     TCP    Port(2)    0.0.0.0          192.168.1.31     ->  OK
+Listen     TCP    Port(2)    127.0.0.1        0.0.0.0          ->  OK
+Listen     TCP    Port(2)    127.0.0.1        127.0.0.1        ->  Error! (Address already in use)
+Listen     TCP    Port(2)    127.0.0.1        192.168.1.31     ->  OK
+Listen     TCP    Port(2)    192.168.1.31     0.0.0.0          ->  OK
+Listen     TCP    Port(2)    192.168.1.31     127.0.0.1        ->  OK
+Listen     TCP    Port(2)    192.168.1.31     192.168.1.31     ->  Error! (Address already in use)
+Listen     TCP    Port(1&2)  0.0.0.0          0.0.0.0          ->  OK
+Listen     TCP    Port(1&2)  0.0.0.0          127.0.0.1        ->  OK
+Listen     TCP    Port(1&2)  0.0.0.0          192.168.1.31     ->  OK
+Listen     TCP    Port(1&2)  127.0.0.1        0.0.0.0          ->  OK
+Listen     TCP    Port(1&2)  127.0.0.1        127.0.0.1        ->  OK
+Listen     TCP    Port(1&2)  127.0.0.1        192.168.1.31     ->  OK
+Listen     TCP    Port(1&2)  192.168.1.31     0.0.0.0          ->  OK
+Listen     TCP    Port(1&2)  192.168.1.31     127.0.0.1        ->  OK
+Listen     TCP    Port(1&2)  192.168.1.31     192.168.1.31     ->  OK
+Multicast  UDP    (none)     224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    (none)     224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    (none)     224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    (none)     224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    (none)     224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    (none)     224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    (none)     224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    (none)     224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    (none)     224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Addr(1)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Addr(1)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Addr(1)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Addr(1)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Addr(1)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Addr(1)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Addr(1)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Addr(1)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Addr(1)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Addr(2)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Addr(2)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Addr(2)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Addr(2)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Addr(2)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Addr(2)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Addr(2)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Addr(2)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Addr(2)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Addr(1&2)  224.1.2.3        224.1.2.3        ->  OK
+Multicast  UDP    Addr(1&2)  224.1.2.3        224.1.2.3        ->  OK
+Multicast  UDP    Addr(1&2)  224.1.2.3        224.1.2.3        ->  OK
+Multicast  UDP    Addr(1&2)  224.1.2.3        224.1.2.3        ->  OK
+Multicast  UDP    Addr(1&2)  224.1.2.3        224.1.2.3        ->  OK
+Multicast  UDP    Addr(1&2)  224.1.2.3        224.1.2.3        ->  OK
+Multicast  UDP    Addr(1&2)  224.1.2.3        224.1.2.3        ->  OK
+Multicast  UDP    Addr(1&2)  224.1.2.3        224.1.2.3        ->  OK
+Multicast  UDP    Addr(1&2)  224.1.2.3        224.1.2.3        ->  OK
+Multicast  UDP    Port(1)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Port(1)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Port(1)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Port(1)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Port(1)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Port(1)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Port(1)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Port(1)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Port(1)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Port(2)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Port(2)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Port(2)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Port(2)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Port(2)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Port(2)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Port(2)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Port(2)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Port(2)    224.1.2.3        224.1.2.3        ->  Error! (Address already in use)
+Multicast  UDP    Port(1&2)  224.1.2.3        224.1.2.3        ->  OK
+Multicast  UDP    Port(1&2)  224.1.2.3        224.1.2.3        ->  OK
+Multicast  UDP    Port(1&2)  224.1.2.3        224.1.2.3        ->  OK
+Multicast  UDP    Port(1&2)  224.1.2.3        224.1.2.3        ->  OK
+Multicast  UDP    Port(1&2)  224.1.2.3        224.1.2.3        ->  OK
+Multicast  UDP    Port(1&2)  224.1.2.3        224.1.2.3        ->  OK
+Multicast  UDP    Port(1&2)  224.1.2.3        224.1.2.3        ->  OK
+Multicast  UDP    Port(1&2)  224.1.2.3        224.1.2.3        ->  OK
+Multicast  UDP    Port(1&2)  224.1.2.3        224.1.2.3        ->  OK
