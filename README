@@ -3,3 +3,12 @@
 After https://stackoverflow.com/questions/14388706/socket-options-so-reuseaddr-and-so-reuseport-how-do-they-differ-do-they-mean-t
 
 and http://rextester.com/BUAFK86204
+
+Qt ReuseAddress
+CentOS 5 SO_REUSEADDR
+
+Qt 4 ReuseAddress
+CentOS 6 SO_REUSEPORT
+
+Qt 5 ReuseAddress
+CentOS 6 SO_REUSEADDR
